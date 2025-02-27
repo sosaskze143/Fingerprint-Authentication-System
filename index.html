@@ -9,17 +9,43 @@
 <body>
     <div class="container">
         <h1>نظام تسجيل البصمات</h1>
+
+        <!-- قسم تسجيل البصمة -->
         <div id="camera-section">
             <video id="camera" autoplay></video>
             <button id="capture-btn">التقاط البصمة</button>
+            <div id="instructions"></div>
         </div>
-        <div id="instructions">
-            <p>ضع إصبعك أمام الكاميرا بشكل واضح.</p>
-            <p>انتظر حتى يتم التقاط البصمة.</p>
-            <p>تحقق من جودة الإضاءة.</p>
+
+        <!-- قسم تسجيل الدخول -->
+        <div id="auth-section">
+            <h2>تسجيل الدخول</h2>
+            <input type="text" id="username" placeholder="اسم المستخدم">
+            <input type="password" id="password" placeholder="كلمة المرور">
+            <button id="login-btn">تسجيل الدخول</button>
+            <button id="register-btn">تسجيل جديد</button>
         </div>
-        <div id="output"></div>
+
+        <!-- قسم التقارير -->
+        <div id="reports-section">
+            <h2>التقارير</h2>
+            <div id="reports-output"></div>
+        </div>
+
+        <!-- قسم الأداء -->
+        <div id="performance-section">
+            <h2>تقييم الأداء</h2>
+            <div id="performance-output"></div>
+        </div>
     </div>
+
+    <script src="auth.js"></script>
+    <script src="database.js"></script>
+    <script src="fingerprint.js"></script>
+    <script src="reports.js"></script>
+    <script src="fakeDetection.js"></script>
+    <script src="instructions.js"></script>
+    <script src="performance.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
