@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     background: #fff;
     padding: 20px;
@@ -22,7 +22,7 @@ body {
     border-radius: 8px;
 }
 
-#capture-btn {
+#capture-btn, #login-btn, #register-btn {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #007bff;
@@ -32,7 +32,7 @@ body {
     cursor: pointer;
 }
 
-#capture-btn:hover {
+#capture-btn:hover, #login-btn:hover, #register-btn:hover {
     background-color: #0056b3;
 }
 
@@ -42,6 +42,7 @@ body {
     color: #666;
 }
 
-#output {
+#reports-output, #performance-output {
     margin-top: 20px;
+    text-align: left;
 }
